@@ -1,0 +1,231 @@
+<html>
+<head>
+<title> </title>
+<style type="text/css">
+body{ padding:0px;
+      margin:0px;
+      font-family:Arial;
+	  font-size:9px;
+	  font-weight:1500px;
+      cursor:pointer;
+}
+td{ font-size:11px;
+    
+}
+.ff{   display:flex;
+       justify-content:center;
+       text-align:center;
+}
+.ganesh{   background:rgba(0,0,0,0.7) url("bg.jpg");
+            background-size:cover;
+            height:100%;
+            width:100%;
+            justify-content:center;
+            align-items:center;
+            align-content:center;
+            
+
+}
+.container{ background-color:#E3F2FD;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border:1px solid red;
+            border-radius:9px;
+            box-shadow:7px 7px 7px rgba(101,110,101,0.9);
+            text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+            padding:0px;
+            
+}
+form{ padding:0px;
+    position: relative;
+}
+legend{ color:#FF9800;
+}
+.submit{ background-color:#4FC3F7;
+         height:30px;
+         width:60px;
+		 border:2px solid red;
+		 border-radius:10px;
+}
+.submit:hover{ background-color:#FF3D00;
+         height:40px;
+         width:80px;
+         transition:all 1.2s ease-in-out;
+		 
+}
+.submit3{ background-color:#4FC3F7;
+         height:30px;
+         width:60px;
+		 border:2px solid red;
+		 border-radius:10px;
+}
+.submit2{  
+          background-color:#4FC3F7;
+         height:30px;
+         width:60px;
+		  border:2px solid red;
+		 border-radius:10px;
+}
+.submit2:hover{ background-color:#FF3D00;
+         height:40px;
+         width:80px;
+         transition:all 1.2s ease-in-out;
+}
+.input1{ background:none;
+         border-radius:5px;
+         border:1px solid blue;
+         font-family:Arial, sans-serif;
+         outline:none;
+         color:red;
+         padding:8px;
+         cursor:text;
+        
+         
+         
+         
+
+}
+.input1:hover{ border:3px solid red;
+               transition:all 0.2s;
+               
+
+}
+::-webkit-input-placeholder{
+       color:green;
+	     
+}
+::-webkit-input-placeholder:hover{
+       color:red;
+	   }
+</style>
+
+          <script>
+          
+        let gg = alert("YOU ARE GOING TO FILL STUDENT VERIFICATION FORM ");
+        console.log(gg)
+          let name = prompt("ENTER YOUR COLLEGE NAME FIRST", "B.D HAMBARDE COLLEGE");
+         console.log(name);
+         let deletepost = confirm("IF YOU REALY WANT TO FILL FORM");
+          console.log(deletepost);
+          
+		  
+		  function login()
+		  {
+		  var a = document.getElementById("mail").value;
+          var b = document.getElementById("pass").value;
+          
+          if(a=="giteganesh09@gmail.com" && b=="ganesh2355")
+		  {   alert("login sucessfull");
+		      document.location="";
+		  }
+		  else
+		  {
+		     alert("incorrect email and password");
+		  }
+		  }
+          </script>
+</head>
+<body>
+<main>
+<div class="ganesh">
+
+<div class="container">
+  <form>
+ 
+ 
+      <center>  <label> <font size="5px" color="red"> <strong> <em> STUDENT VERIFICATION FORM </em> </strong> </font> </label> </center>
+         
+         <br>
+         <fieldset> <legend> NAME INFO </legend>
+         <font> FIRST NAME : </font> <input id="uname" type="text" placeholder="ENTER YOUR NAME" class="input1"> 
+         
+         
+         <font> MIDDLE NAME : </font> <input type="text" placeholder="ENTER YOUR MIDDLE NAME" class="input1">
+         
+         
+         <font> LAST NAME : </font> <input type="text" placeholder="ENTER YOUR LAST NAME" class="input1">
+         </fieldset>
+         <br>
+         <br>
+         
+         <fieldset> <legend> GENDER </legend>
+		 <table>
+		 <tr> <td width="80%">
+        <font> SELECT YOUR GENDER : </font> <input type="radio" name="gender"> <font> MALE </font>
+        <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;   &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;                           
+         <input type="radio" name="gender"> <font> FEMALE </font>
+         <br>
+		 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+		 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+		 &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+         <input type="radio" name="gender"> <font> TRANSGENDER </font>
+        </td>
+		<td>
+        <font class="ff" align="center" valign="middle"> SELECT YOUR AGE :</font> 18 <input type="checkbox" name="age"> 19
+        <input type="checkbox" name="age"> 20<input type="checkbox" name="age">
+        
+		</td>
+		</tr>
+		</table>
+		</fieldset>
+        <br>
+        <br>
+        <fieldset> <legend> NUMBER</legend>
+		<table>
+		<tr>
+		<td>
+        <font>ENTER YOUR NO : </font><select> 
+                                              <option> 91 </option>
+                                              <option> 92 </option>
+                                              <option> 93 </option>
+                                              <option> 94 </option>
+                                     </select>
+        <input type="number" placeholder="ENTER YOUR NO:" class="input1">
+        <br>
+        <br>
+         <font> DATE OF BIRTH : </font>  <input type="time"> <input type="date">                    
+          </td>
+		  <td>
+		    <font> ADHAR NO : </font> <input type="number" placeholder="your adhar Number" class="input1">
+			<font> pan : </font> <input type="number" placeholder="your pan Number" class="input1">
+		  </td>
+		  </tr>
+		  </table>
+		  </fieldset>   
+          <br>
+          <fieldset> <legend> RESISTER HERE </legend>
+		  <table>
+		  <tr>
+		  <td width="60%">
+          <font> E-MAIL : </font>  <input id="mail" type="email" placeholder="@gmail.com" class="input1">  
+          <br>
+          <br>
+          <font> password : </font>   <input id="pass" type="password" placeholder="********" class="input1">      
+          </td>
+		  <td>
+		     <font> COLLAGE NAME : </font> <input type="text" placeholder="ENTER YOUR COLLAGE NAME" class="input1">  
+		  </td>
+		  </tr>
+		  </table>
+		  </fieldset>
+          <br>
+         
+         
+          <button onclick="" value="SUBMIT" class="submit"> submit </button>
+		  <button onclick="login()"  class="submit3"> login </button>
+           <button  value="cancle" class="submit2"> cancle </button>
+          
+          
+  </form>
+</div>
+</div>
+</main>
+</body>
+</html>
